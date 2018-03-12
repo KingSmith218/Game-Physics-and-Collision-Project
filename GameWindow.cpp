@@ -1,3 +1,4 @@
+// (c) Marco Gilardi, 2017
 #include "GameWindow.h"
 
 void GameWindow::Reshape(GLsizei width, GLsizei height)

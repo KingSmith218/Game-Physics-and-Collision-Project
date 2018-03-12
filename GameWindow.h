@@ -1,4 +1,4 @@
-
+// (c) Marco Gilardi, 2017
 #pragma once
 #include <GL\glut.h>
 
@@ -10,12 +10,12 @@ private:
 	int width, height;
 public:
 
-	GameWindow(/*char* title,*/ int width, int height, int posX, int posY):width(width),height(height)
+	GameWindow(char* title, int width, int height, int posX, int posY):width(width),height(height)
 	{
 		glutInitDisplayMode(GLUT_DOUBLE);	// Enable double buffered mode
 		glutInitWindowSize(width, height);	// Initial window width and height
 		glutInitWindowPosition(posX, posY); // Initial window top-left corner (x, y)
-	//	glutCreateWindow(title);			// Create window with given title
+		glutCreateWindow(title);			// Create window with given title
 	}
 
 	virtual ~GameWindow() {}
