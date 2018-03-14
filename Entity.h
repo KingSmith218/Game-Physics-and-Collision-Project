@@ -1,10 +1,11 @@
+// (c) Marco Gilardi, 2017
 #pragma once
+#include <glm\glm.hpp>
+using namespace glm;
 
 class Entity
 {
 public:
-	virtual void show(int width, int height) = 0;
 	virtual void update(float dt) = 0;
-//	virtual float getY() = 0;
-
-}; 
+	virtual void draw(int width, int height) = 0;
+};
